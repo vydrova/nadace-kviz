@@ -1,130 +1,136 @@
 let questions = [{
-        name: "halabala",
-        content: "Text první otázky",
+        name: "hl-mesto",
+        content: "Hlavní město České republiky je:",
         type: "radio",
         score: 0,
         answers: [{
-                content: "Text první odpovědi.",
+                content: "Brno",
                 correct: false
             },
             {
-                content: "Text druhé odpovědi. (správná)",
+                content: "Praha",
                 correct: true
             },
             {
-                content: "Text první odpovědi.",
+                content: "Vídeň",
                 correct: false
             },
             {
-                content: "Text první odpovědi.",
+                content: "Pardubice",
                 correct: false
             },
         ]
     },
     {
-        name: "blabla",
-        content: "Text druhé otázky",
+        name: "vlajka",
+        content: "Jaké barvy nalezneme na vlajce České republiky?",
         type: "checkbox",
         score: 0,
         answers: [{
-                content: "Text první odpovědi. (správná)",
+                content: "Modrá",
                 correct: true
             },
             {
-                content: "Text druhé odpovědi.",
+                content: "Oranžová",
                 correct: false
             },
             {
-                content: "Text třetí odpovědi.",
+                content: "Černá",
                 correct: false
             },
             {
-                content: "Text čtvrté odpovědi. (správná)",
+                content: "Bílá",
                 correct: true
             },
             {
-                content: "Text páté odpovědi.",
+                content: "Zelená",
                 correct: false
+            },
+            {
+                content: "Červená",
+                correct: true
             }
         ]
     },
     {
-        name: "animal",
-        content: "Text čtvrté otázky",
+        name: "zviratka",
+        content: "Vyberte obrázek, na kterém je kočka a pes.",
         type: "img",
         score: 0,
         answers: [{
                 path: "img/cat.jpg",
+                alt: "kocka",
                 correct: true
             },
             {
                 path: "img/guinea_pig.jpg",
+                alt: "morce",
                 correct: false
             },
             {
                 path: "img/hamster.jpg",
+                alt: "krecek",
                 correct: false
             },
             {
                 path: "img/parrot.jpg",
+                alt: "papousek",
                 correct: false
             },
             {
                 path: "img/dog.jpg",
+                alt: "pes",
                 correct: true
             },
             {
                 path: "img/rabbit.jpg",
+                alt: "kralik",
                 correct: false
             }
         ]
     },
     {
-        name: "alabama",
-        content: "Text první otázky",
+        name: "dospelost",
+        content: "Věková hranice plnoletosti v České republice je:",
         type: "radio",
         score: 0,
         answers: [{
-                content: "Text první odpovědi.",
+                content: "21 let",
                 correct: false
             },
             {
-                content: "Text druhé odpovědi. (správná)",
+                content: "15 let",
+                correct: false
+            },
+            {
+                content: "18 let",
                 correct: true
-            },
-            {
-                content: "Text první odpovědi.",
-                correct: false
-            },
-            {
-                content: "Text první odpovědi.",
-                correct: false
             },
         ]
     },
     {
-        name: "balmba",
-        content: "Text druhé otázky",
+        name: "reky",
+        content: "Které řeky protékají Českou robuplikou?",
         type: "checkbox",
         score: 0,
         answers: [{
-                content: "Text první odpovědi. (správná)",
-                correct: true
-            },
-            {
-                content: "Text druhé odpovědi.",
+                content: "Nil",
                 correct: false
             },
             {
-                content: "Text třetí odpovědi.",
-                correct: false
-            },
-            {
-                content: "Text čtvrté odpovědi. (správná)",
+                content: "Labe",
                 correct: true
             },
             {
-                content: "Text páté odpovědi.",
+                content: "Odra",
+                correct: true
+            },
+            {
+                content: "Ganga",
+                correct: false
+            },
+            {
+                content: "Dunaj",
                 correct: false
             }
         ]
