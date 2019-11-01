@@ -19,12 +19,12 @@ body {
     margin-bottom: 15px;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 .hidden {
     display: none;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 .checked-answer {

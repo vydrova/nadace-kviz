@@ -110,7 +110,7 @@ let questions = [{
     },
     {
         name: "reky",
-        content: "Které řeky protékají Českou robuplikou?",
+        content: "Které řeky protékají Českou republikou?",
         type: "checkbox",
         score: 0,
         answers: [{

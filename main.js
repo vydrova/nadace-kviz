@@ -28,7 +28,8 @@ function view(i) {
         if (type === "radio" || type === "checkbox") {
             questions[i].answers.forEach(function(item, index) {
                 answersContent = answersContent + '<input type="' + type + '" name="' + name +
-                    '" class="checked-answer" id="' + index + '"><label for="' + index + '">&nbsp;' + item.content + '</label><br>';
+                    '" class="checked-answer" id="' + index + '"><label for="' + index + '">&nbsp;' + item.content +
+                    '</label><br>';
             });
             form.innerHTML = answersContent;
         }
@@ -36,8 +37,9 @@ function view(i) {
         if (type === "img") {
             questions[i].answers.forEach(function(item, index) {
                 let pathOfImg = item.path;
-                let nameOfQuestion = questions[i].name;
-                answersContent = answersContent + '<img src="' + pathOfImg + '" title="' + name + '" class="img-answer"> ';
+                let alt = item.alt;
+                answersContent = answersContent + '<img src="' + pathOfImg + '" title="' + name +
+                    '" class="img-answer" alt="' + alt + '"> ';
             });
             form.innerHTML = answersContent;
             imgClick();
@@ -54,7 +56,7 @@ function view(i) {
         questions.forEach(function(item, index) {
             resultsContent = resultsContent + "<tr> <td>" + item.content +
                 "</td> <td>" + item.score + "</td> <tr>";
-        })
+        });
         resultsContent = resultsContent + "<tr> <td><b>" + "Celkový počet bodů</b>" +
             "</td> <td><b>" + score + "</b></td> <tr>";
         table.innerHTML = resultsContent;
@@ -66,9 +68,6 @@ function view(i) {
         document.querySelector(".next").textContent = "Vyhodnotit test";
     }
 }
-
-view(counter);
-
 
 function checkedSelect(i, name) {
     let questionScore = 0;
@@ -126,6 +125,8 @@ function imgClick() {
         });
     });
 }
+
+view(counter);
 
 document.querySelector(".next").addEventListener("click", function() {
     let viewNext = false;
